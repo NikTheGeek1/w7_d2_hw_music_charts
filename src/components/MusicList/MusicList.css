@@ -1,0 +1,9 @@
+.MusicList {
+    margin-left: 10px;
+    list-style: none;
+    display: grid;
+    row-gap: 80px;
+    column-gap: 80px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

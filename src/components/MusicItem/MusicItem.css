@@ -1,0 +1,46 @@
+.MusicItem {
+    /* background-color: tomato; */
+    height: 100%;
+}
+
+
+.MusicItemDiv {
+    display: grid;
+    grid-template-areas: 
+    "num ."
+    ". image"
+    ". song"
+    ". info";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 1fr min-content min-content 40px;
+    justify-content: center;
+}
+
+.ChartNum {
+    grid-area: num;
+    margin: 0;
+    justify-self: end;
+    margin-right: -40px;
+}
+
+.SongImage {
+    height: 200px;
+    grid-area: image;
+    justify-self: center;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.SongInfo {
+    font-size: 14px;
+    grid-area: info;
+}
+
+.SongInfo > a {
+    text-decoration: none;
+    color: turquoise;
+}
+
+.SongPreview {
+    grid-area: song;
+}
